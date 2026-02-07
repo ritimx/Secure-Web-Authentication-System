@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Secure Authentication System</title>
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #a28788, #cdc0bd); /* Modern gradient background */
+            color: #333;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .main {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 400px;
+            padding: 30px;
+            box-sizing: border-box;
+            color: #333;
+            position: relative;
+        }
+
+        .content h1 {
+            font-size: 2.5rem;
+            color: #2c3e50; /* Dark Blue */
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .content h1 span {
+            color: #e74c3c; /* Red */
+        }
+
+        .content .par {
+            text-align: center;
+            color: #7f8c8d; /* Grey */
+            margin-bottom: 25px;
+            font-size: 1rem;
+        }
+
+        .form h2 {
+            text-align: center;
+            color: #e74c3c; /* Red */
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .form input {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 1px solid #bdc3c7; /* Light Grey */
+            border-radius: 8px;
+            box-sizing: border-box;
+            background: #ecf0f1; /* Light Grey */
+            color: #2c3e50; /* Dark Blue */
+            font-size: 1rem;
+        }
+
+        .form input::placeholder {
+            color: #95a5a6; /* Muted Grey */
+        }
+
+        .form .btnn {
+            width: 100%;
+            padding: 12px;
+            background: #e74c3c; /* Red */
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .form .btnn:hover {
+            background: #c0392b; /* Darker Red */
+        }
+
+        .form .link {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+
+        .form .link a {
+            color: #e74c3c; /* Red */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .form .link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main">
+    <div class="content">
+
+        <div>
+            <h1>CryptonicArea <span>Secure</span></h1>
+            <p class="par">Secure Authentication System</p>
+        </div>
+
+        <!-- IMPORTANT FORM -->
+        <div class="form">
+            <h2>Login Here</h2>
+            <form method="POST">
+
+                <input type="email" name="email" placeholder="Enter Email Here" required>
+                <input type="password" name="password" placeholder="Enter Password Here" required>
+
+                <button class="btnn" type="submit">Login</button>
+
+            </form>
+
+            <p class="link">
+                Don't have an account?<br>
+                <a href="/register">Sign up here</a>
+            </p>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

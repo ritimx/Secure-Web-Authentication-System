@@ -1,0 +1,136 @@
+<div class="form-container">
+    <h2>Register</h2>
+
+    <form method="POST" class="register-form">
+        <input name="username" type="text" placeholder="Enter your username" required>
+        <input name="email" type="email" placeholder="Enter your email" required>
+        <input name="password" type="password" placeholder="Enter your password" required>
+
+        <button class="btnn" type="submit">Register</button>
+    </form>
+
+    <p class="link">
+        Already have an account? <a href="/login">Login</a>
+    </p>
+</div>
+
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+        color: #333;
+        overflow: hidden;
+    }
+
+    .form-container {
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 15px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 400px;
+        padding: 30px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .form-container h2 {
+        color: #e74c3c; /* Red */
+        margin-bottom: 20px;
+        font-size: 1.8rem;
+    }
+
+    .register-form input {
+        width: 100%;
+        padding: 12px;
+        margin: 12px 0;
+        border: 1px solid #bdc3c7; /* Light Grey */
+        border-radius: 8px;
+        box-sizing: border-box;
+        background: #ecf0f1; /* Light Grey */
+        color: #2c3e50; /* Dark Blue */
+        font-size: 1rem;
+    }
+
+    .register-form input::placeholder {
+        color: #95a5a6; /* Muted Grey */
+    }
+
+    .btnn {
+        width: 100%;
+        padding: 12px;
+        background: #e74c3c; /* Red */
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+
+    .btnn:hover {
+        background: #c0392b; /* Darker Red */
+    }
+
+    .link {
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+
+    .link a {
+        color: #e74c3c; /* Red */
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .link a:hover {
+        text-decoration: underline;
+    }
+
+    /* Cursor hover effect */
+    body::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: rgba(231, 76, 60, 0.5); /* Semi-transparent red */
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%) scale(1);
+        transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    body:hover::before {
+        transform: translate(-50%, -50%) scale(1.5);
+        background: rgba(192, 57, 43, 0.7); /* Darker red */
+    }
+
+    body {
+        cursor: none;
+    }
+
+    body:hover {
+        cursor: none;
+    }
+
+    body {
+        position: relative;
+    }
+
+    body:hover::before {
+        left: var(--mouse-x);
+        top: var(--mouse-y);
+    }
+</style>
+<script>
+    document.addEventListener('mousemove', (e) => {
+        document.body.style.setProperty('--mouse-x', `${e.clientX}px`);
+        document.body.style.setProperty('--mouse-y', `${e.clientY}px`);
+    });
+</script>
