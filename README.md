@@ -37,13 +37,10 @@ This system implements a secure authentication and authorization flow to ensure 
    - Below are screenshots of the application:
 
 ### Login Page
-![Login Page](screenshots/login.png)
-
-### Register Page
-![Register Page](screenshots/register.png)
+![Login Page](ss01.png)
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](ss02.png)
 
 4. **Flow**:
    - **Step 1**: User registers with a username, email, and password.
